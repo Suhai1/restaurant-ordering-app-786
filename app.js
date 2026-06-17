@@ -11,10 +11,10 @@ document.querySelectorAll('.reveal, .reveal-l, .reveal-r').forEach(el => obs.obs
 // ── Menu data ─────────────────────────────────────────────────
 const MENU = {
   burgers: [
-    { icon:'🍔', name:'OG Smash Burger',       desc:'70G beef smash patty, grilled onion, cheddar cheese, dill pickles & in-house Bruv sauce.',                                price:'R85',  priceNum:85,  badge:'Fan Fave', hot:false },
-    { icon:'🫶', name:'Bruv Smash Burger',      desc:'70G beef smash patty, caramelized onion, mozzarella, dill pickles & in-house Bruv sauce.',                                price:'R90',  priceNum:90,  badge:'Signature', hot:false },
-    { icon:'🌶️', name:'Jalapeño Monster',       desc:'70G beef smash patty, grilled onions, cheddar, pickled jalapeño, creamy jalapeño sauce & Bruv sauce.',                    price:'R85',  priceNum:85,  badge:'Hot 🔥', hot:true },
-    { icon:'🍗', name:'Spicy Chicken Smash',    desc:'80G chicken smash patty, onions, dill pickles, cheddar cheese and Bruv sauce.',                                           price:'R80',  priceNum:80,  badge:'New', hot:true },
+    { icon:'🍔', name:'OG Smash Burger',       desc:'70G beef smash patty, grilled onion, cheddar cheese, dill pickles & in-house Bro sauce.',                                price:'R85',  priceNum:85,  badge:'Fan Fave', hot:false },
+    { icon:'🫶', name:'Bro Smash Burger',      desc:'70G beef smash patty, caramelized onion, mozzarella, dill pickles & in-house Bro sauce.',                                price:'R90',  priceNum:90,  badge:'Signature', hot:false },
+    { icon:'🌶️', name:'Jalapeño Monster',       desc:'70G beef smash patty, grilled onions, cheddar, pickled jalapeño, creamy jalapeño sauce & Bro sauce.',                    price:'R85',  priceNum:85,  badge:'Hot 🔥', hot:true },
+    { icon:'🍗', name:'Spicy Chicken Smash',    desc:'80G chicken smash patty, onions, dill pickles, cheddar cheese and Bro sauce.',                                           price:'R80',  priceNum:80,  badge:'New', hot:true },
   ],
   fries: [
     { icon:'🍟', name:'Small Fries',            desc:'Crispy skinny fries. The classic.',                                                                                       price:'—',    priceNum:0,   badge:'', hot:false },
@@ -159,10 +159,10 @@ function orderOnWhatsApp() {
     return;
   }
 
-  const phone = '27792790592'; // South African format, no leading 0
+  const phone = '27717865296'; // South African format, no leading 0
   const note  = document.getElementById('cartNote').value.trim();
 
-  let lines = ['Hi Bruv Burger! \uD83D\uDC4B I would like to place an order:', ''];
+  let lines = ['Hi Bro Burger! \uD83D\uDC4B I would like to place an order:', ''];
   cart.forEach(item => {
     const priceStr = item.priceNum > 0 ? ` (${item.price} each)` : '';
     lines.push(`\u2022 ${item.qty}\u00D7 ${item.name}${priceStr}`);
